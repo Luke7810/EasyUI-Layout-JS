@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Layout - jQuery EasyUI Demo</title>
+    <link rel="stylesheet" type="text/css" href="framework/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="framework/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="framework/demo.css">
+
+    <style type="text/css">
+    .logo {
+        width: : 180 px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        color: #191970;
+    }
+    
+    .logout {
+        float: right;
+        padding: 30px 15px 0 0; 
+        color: #191970;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+
+<body class="easyui-layout">
+	<!-- 项目页面头信息 -->
+    <div data-options="region:'north'" style="height:60px; background-color: #add8e6;" >
+        <div class="logo">Demo System</div>
+        <div class="logout">Welcome: Admin | <a href="">Logout</a></div>
+    </div>
+
+    <!-- 项目页面导航信息-->
+    <div data-options="region:'west',split:true,iconCls:'icon-tip'" title="Navigation" style="width:180px;">
+        <div class="easyui-accordion" data-options="fit:true,border:false">
+            <div title="User Management" style="padding:10px;" data-options="selected:true">
+                <ul id="nav" class="easyui-tree" data-options="url:'data/tree_data1.json',method:'get',animate:true,dnd:true,lines:true"></ul>
+            </div>
+            <div title="Product Management" style="padding:10px;">
+                content2
+            </div>
+            <div title="System Report" style="padding:10px">
+                content3
+            </div>
+        </div>
+    </div>
+
+    <!-- 项目页主内容界面-->
+    <div data-options="region:'center',title:'Main Content',iconCls:'icon-ok'">
+        <div id="tabs" class="easyui-tabs" data-options="fit:true,border:false,plain:true">
+        	<!-- 项目About界面-->
+            <div title="About" data-options="href:'_content.html', iconCls:'icon-help'" style="padding:10px"></div>
+
+    </div>
+
+</body>
+    <script type="text/javascript" src="framework/jquery.min.js"></script>
+    <script type="text/javascript" src="framework/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="layout.js"></script>
+</html>

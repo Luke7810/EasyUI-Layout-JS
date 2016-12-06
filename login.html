@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Demo</title>
+	<link rel="stylesheet" type="text/css" href="framework/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="framework/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="framework/demo.css">
+	<style>
+		#login {
+			padding: 6px 0 0 0;
+		}
+		p {
+			height: 22px;
+			line-height: 22px;
+			padding: 4px 0 0 25px;
+		}
+		.textbox {
+			height: 22px;
+			padding: 0 2px;
+		}
+		#btn {
+			text-align: center;
+		}
+		.easyui-linkbutton{
+			padding: 0 10px;
+		}
+	</style>>
+</head>
+
+<body class="easyui-layout">
+	<div id='login'>
+
+		<p> User Name: <input name="username" id="manager" class="easyui-validatebox" required="true" missingMessage="username can not be null."></input>  
+
+		<p>  Password:&nbsp;&nbsp;  <input type="password" name="password" id="password" class="easyui-validatebox" data-options="required:true,validType:'length[3,10]'"></p>
+	</div>
+	
+	<div id='btn'>
+		<a href="#" class="easyui-linkbutton">Login</a>
+	</div>
+</body>
+<script type="text/javascript" src="framework/jquery.min.js"></script>
+<script type="text/javascript" src="framework/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="login.js"></script>
+</html>

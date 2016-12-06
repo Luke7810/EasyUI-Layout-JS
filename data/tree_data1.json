@@ -1,0 +1,33 @@
+[{
+	"id":1,
+	"text":"User Menu",
+	"iconCls": "icon-sum",
+	"children":[{
+		"id":11,
+		"text":"Actions",
+		"iconCls": "icon-save",
+		"state":"open",
+		"children":[{
+			"id":111,
+			"text":"User List",
+			"url": "datagrid_layout.html"
+		},{
+			"id":112,
+			"text":"User Form",
+			"url": "Datagrid"
+		}]
+	},{
+		"id":12,
+		"text":"Tools",
+		"iconCls": "icon-cut",
+		"children":[{
+			"id":121,
+			"text":"Tools Form 1",
+			"url": "Tools1"
+		},{
+			"id":122,
+			"text":"Tools Form 2",
+			"url": "Tools2"
+		}]
+	}]
+}]
